@@ -29,24 +29,48 @@
 				<section>Slide 2</section>
 				-->
 
-				<?php
-				$files = array();
-				$dir = opendir('slides'); // open the cwd..also do an err check.
-				while(false != ($file = readdir($dir))) {
-				        if(($file != ".") and ($file != "..") and ($file != "index.php")) {
-				                $files[] = $file; // put in array.
-				        }   
-				}
-
-				natsort($files); // sort.
-
-				// print.
-				foreach($files as $file) {
-				        // echo("<a href='$file'>$file</a> <br />\n");
-						include "slides/$file";
-				}
-				?>
-
+				<section>
+	<h4>This slide is intentionally left blank</h4>
+</section><section>
+	<h3>The Challenges of Metadata <br> for Indigenous Knowledge Archives</h3>
+	<hr class="fragment">
+	<h4 class="fragment">NISHAD Thalhath Rehumath</h4>
+</section><section>
+	<h1 style="color: red">Indigenous ?</h1>
+</section><section>
+<h4>United Nations Declaration on the Rights of Indigenous Peoples, Article 31 </h4>
+	<p style="font-size: 60%">
+	"Indigenous peoples have the right to maintain, control, protect 
+and develop their cultural heritage, traditional knowledge and traditional  cultural  expressions,  as  well  as  the  manifestations  of  their sciences,  technologies  and  cultures,  including  human  and  genetic 
+resources,  seeds,  medicines,  knowledge  of  the  properties  of  fauna 
+and flora, oral traditions, literatures, designs, sports and traditional 
+games and visual and performing arts. They also have the right to 
+maintain,  control,  protect  and  develop  their  intellectual  property 
+over  such  cultural  heritage,  traditional  knowledge,  and  traditional 
+cultural expressions."
+	</p>
+	
+</section><section>
+<h3 class="fragment">maintain</h3>
+<h3 class="fragment">control</h3>
+<h3 class="fragment">protect</h3>
+<h3 class="fragment">develop</h3>
+</section><section tagcloud>
+sciences
+technologies
+cultures 
+human resources
+genetic resources
+seeds
+medicines
+fauna and flora
+oral traditions
+literatures
+designs
+sports
+traditional games
+visual and performing arts
+</section>
 
 			</div>
 		</div>
