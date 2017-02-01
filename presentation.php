@@ -7,7 +7,7 @@
 		<title>reveal.js</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/solarized.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -42,7 +42,8 @@
 
 				// print.
 				foreach($files as $file) {
-				        echo("<a href='$file'>$file</a> <br />\n");
+				        // echo("<a href='$file'>$file</a> <br />\n");
+						include "slides/$file";
 				}
 				?>
 
